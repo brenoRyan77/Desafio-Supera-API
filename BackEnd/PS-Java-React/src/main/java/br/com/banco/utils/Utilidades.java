@@ -8,8 +8,6 @@ import java.time.ZonedDateTime;
 
 public class Utilidades {
 
-	private static final String DATE_FORMAT = "dd/MM/yyyy";
-
 	public static boolean ehNullOuVazio(Object valor) {
 
 		return valor == null || valor.toString().trim().equals("");
