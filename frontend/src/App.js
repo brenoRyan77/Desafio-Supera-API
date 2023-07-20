@@ -26,8 +26,13 @@ function App() {
 
   const fetchData = async () => {
     const response = await axios.get("http://localhost:8080/transferencia", { params: filters })
-    const data2 = response.data
-    setData(data2)
+    const retorno = response.data
+    if (retorno.length === 0) {
+      alert('Nenhum resultado encontrado na pesquisa.');
+    } else {
+      setData(retorno)
+
+    }
   };
 
   const formatDate = (dateString) => {

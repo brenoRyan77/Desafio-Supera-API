@@ -3,14 +3,12 @@ package br.com.banco.entities;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import br.com.banco.enumeration.Operacao;
 import lombok.Data;
 
 @Entity

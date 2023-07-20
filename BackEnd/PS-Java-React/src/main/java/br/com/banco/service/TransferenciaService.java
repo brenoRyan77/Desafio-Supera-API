@@ -8,5 +8,5 @@ import br.com.banco.entities.Transferencia;
 
 public interface TransferenciaService {
 
-	List<Transferencia> consultarTransacoes(TransferenciaDTO dtoFom);
+	List<Transferencia> consultarTransacoes(TransferenciaDTO dtoFom) throws Exception;
 }
